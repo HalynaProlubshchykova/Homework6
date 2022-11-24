@@ -9,7 +9,7 @@
     <body>
         <h1>Форма реєстрації</h1>
         <p>Будь ласка, заповніть цю форму необхідною інформацією</p>
-        <form action="" method="post">
+        <form>
             <fieldset>
                 <label for="FullName">Повне ім'я</label>
                 <input type="text" id="FullName" name="FullName" required>
@@ -23,8 +23,8 @@
                 <input type="password" id="password" name="password" pattern="[a-z0-9]{8,}" required>
             </fieldset>
             <fieldset>
-                <label for="passwordpassword confirmation">Підтвердіть Ваш пароль</label>
-                <input type="password" id="password confirmation" name="password" pattern="[a-z0-9]{8,}" required>
+                <label for="password_confirmation">Підтвердіть Ваш пароль</label>
+                <input type="password" id="password_confirmation" name="password" pattern="[a-z0-9]{8,}" required>
             </fieldset>
             <fieldset>
                 <p>Стать</p>
@@ -40,6 +40,7 @@
             <fieldset>
                 <label for="course">Оберіть курс</label>
                 <select id="course" name="course" required>
+                    <option value="">Курс</option>
                     <option value="Front-End">Front-End</option>
                     <option value="Back-End">Back-End</option>
                     <option value="Project Management">Project Management</option>
@@ -51,8 +52,8 @@
                 <textarea name="address" id="address" cols="30" rows="3" placeholder="Країна, регіон, місто/село, вулиця" required></textarea>
             </fieldset>
             <fieldset>
-                <label for="privacy conditions">Я погоджуюся з умовами конфіденційності</label>
-                <input type="checkbox" id="privacy conditions" name="privacy conditions" required>
+                <label for="privacy_conditions">Я погоджуюся з умовами конфіденційності</label>
+                <input type="checkbox" id="privacy_conditions" name="privacy_conditions" required>
             </fieldset>
             <input type="submit" value="Зареєструватися">
         </form>
